@@ -6,6 +6,13 @@ include_directories(include)
 
 file(GLOB SOURCES "source/*.cpp")
 
-add_executable(Alphabetizer.exe
+add_executable(Alphabetizer
 	${SOURCES}
 	)
+
+set_target_properties(
+	Alphabetizer
+	PROPERTIES
+		OUTPUT_NAME "Alphabetizer"
+		SUFFIX ".exe"
+)
