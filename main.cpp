@@ -1,14 +1,36 @@
 
+#include <fstream>
 #include <iostream>
+#include <string>
+#include <sstream>
+#include <string>
+
 #include "sort.h"
 #include "tests.h"
 
 // definitions for main.cpp local functions
-int runProgram(void);
+//int runProgram(void);
 
-int main()
+int main(int argc, char* argv[])
 {
-    int result = 0;
+    std::string line;
+    std::ifstream test;
+    std::ofstream output;
+	test.open(argv[1]);
+    output.open(argv[2]);
+	if (!test.good())
+	{
+		std::cout << "File doesn't exist. Closing program" << std::endl;
+		exit(1);
+	}
+    while(!test.eof())
+    {
+        getline(test, line);
+        //std::cout << line << std::endl;
+        output << line << std::endl;
+    }
+    
+    /*int result = 0;
     // run tests before starting program
     result = runTests();
     if (result != 0)
@@ -40,5 +62,5 @@ int main()
 int runProgram()
 {
     // run the actual program to sort the file
-    return 0;
+    return 0;*/
 }
