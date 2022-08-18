@@ -5,8 +5,8 @@
 #include <sstream>
 #include <string>
 
-#include "sort.hpp"
-#include "tests.h"
+#include "../include/sort.hpp"
+#include "../include/tests.hpp"
 
 
 // definitions for main.cpp local functions
