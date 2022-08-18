@@ -1,6 +1,7 @@
 #include <fstream>
 #include <iostream>
-#include "sort.hpp"
+#include <string>
+#include "../include/sort.hpp"
 
 bool alphabetize(std::ifstream& test, std::ofstream& output)
 {

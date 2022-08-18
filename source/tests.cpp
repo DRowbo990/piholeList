@@ -1,6 +1,6 @@
 #include <iostream>
-#include "tests.hpp"
-#include "sort.hpp"
+#include "../include/tests.hpp"
+#include "../include/sort.hpp"
 
 // definitions for tests.cpp local functions
 bool testSimpleCompare1();
