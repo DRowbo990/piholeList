@@ -8,27 +8,23 @@
 #include "sort.h"
 #include "tests.h"
 
+
 // definitions for main.cpp local functions
 //int runProgram(void);
 
 int main(int argc, char* argv[])
 {
-    std::string line;
     std::ifstream test;
     std::ofstream output;
 	test.open(argv[1]);
     output.open(argv[2]);
 	if (!test.good())
 	{
-		std::cout << "File doesn't exist. Closing program" << std::endl;
+		std::cout << argv[1] << " File doesn't exist. Closing program" << std::endl;
 		exit(1);
 	}
-    while(!test.eof())
-    {
-        getline(test, line);
-        //std::cout << line << std::endl;
-        output << line << std::endl;
-    }
+
+    alphabetize(test, output);
     
     /*int result = 0;
     // run tests before starting program
