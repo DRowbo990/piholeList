@@ -14,17 +14,17 @@
 
 int main(int argc, char* argv[])
 {
-    std::ifstream test;
+    std::ifstream readFile;
     std::ofstream output;
-	test.open(argv[1]);
+	readFile.open(argv[1]);
     output.open(argv[2]);
-	if (!test.good())
+	if (!readFile.good())
 	{
 		std::cout << "File doesn't exist. Closing program" << std::endl;
 		exit(1);
 	}
 
-    alphabetize(test, output);
+    alphabetize(readFile, output);
     
     /*int result = 0;
     // run tests before starting program
