@@ -5,43 +5,37 @@
 
 #include "../include/sort.hpp"
 
-void compareOperation(std::string s1, std::ifstream &readFile)
+void insert(std::string s1, std::ifstream &readFile)
 {
-    std::string s2;
 
-    while(!readFile.eof())
-    {
-        getline(readFile, s2);
-        // returns a value < 0 (s1 is smaller than s2)
-        if((s1.compare(s2)) < 0)
-        {
-            std::cout << s1 << " is smaller than " << s2 << std::endl;
-        }
-    
-        // returns 0(s1, is being compared to itself)
-        else if((s1.compare(s1)) == 0)
-        {
-            std::cout << s1 << " is equal to " << s1 << std::endl;
-        }
-        else
-        {
-            std::cout << "Strings didn't match ";
-        }
-    }
-     
 }
 
 bool alphabetize(std::ifstream &readFile, std::ofstream &output)
 {
     int counter = 0;
-    std::string line;
+    std::string s1;
+    std::string s2;
+    getline(readFile, s1);
     while (!readFile.eof())
     {
         ++counter;
-        getline(readFile, line);
-        compareOperation(line, readFile);
+        getline(readFile, s2);
+        std::cout << s2 << std::endl;
 
-        output << line << std::endl;
+        if((s1.compare(s2)) < 0)
+        {
+          output << s1 << std::endl;
+        }
+    
+        else if((s1.compare(s2)) == 0)
+        {
+            std::cout << s1 << " is equal to " << s1 << std::endl;
+        }
+        else
+        {
+            output << s2 << std::endl;
+        }
+
         if (counter % 10000 == 0)
         {
             std::cout << counter << " lines completed" << std::endl;
