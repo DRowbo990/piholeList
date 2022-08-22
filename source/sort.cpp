@@ -1,7 +1,9 @@
+
 #include <fstream>
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <string>
 
 #include "../include/sort.hpp"
 
@@ -10,7 +12,7 @@ void insert(std::string s1, std::ifstream &readFile)
 
 }
 
-bool alphabetize(std::ifstream &readFile, std::ofstream &output)
+void alphabetize(std::ifstream &readFile, std::ofstream &output, std::string r, std::string w)
 {
     int counter = 0;
     std::string s1;
@@ -43,11 +45,5 @@ bool alphabetize(std::ifstream &readFile, std::ofstream &output)
     }
 
     std::cout << "Completed, " << counter << " total lines" << std::endl;
-    return true;
 }
 
-int simpleCompare(int leftValue, int rightValue)
-{
-    // to be implemented
-    return 0;
-}

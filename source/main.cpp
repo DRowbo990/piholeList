@@ -16,15 +16,19 @@ int main(int argc, char* argv[])
 {
     std::ifstream readFile;
     std::ofstream output;
+    std::string r = argv[1];
+    std::string w = argv[2];
+
 	readFile.open(argv[1]);
     output.open(argv[2]);
+    
 	if (!readFile.good())
 	{
 		std::cout << "File doesn't exist. Closing program" << std::endl;
 		exit(1);
 	}
 
-    alphabetize(readFile, output);
+    alphabetize(readFile, output, r, w);
     
     /*int result = 0;
     // run tests before starting program
