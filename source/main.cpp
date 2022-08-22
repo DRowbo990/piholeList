@@ -14,6 +14,7 @@
 
 int main(int argc, char* argv[])
 {
+    //set up file names and check file validity.
     std::ifstream readFile;
     std::ofstream output;
     std::string r = argv[1];
@@ -21,7 +22,7 @@ int main(int argc, char* argv[])
 
 	readFile.open(argv[1]);
     output.open(argv[2]);
-    
+
 	if (!readFile.good())
 	{
 		std::cout << "File doesn't exist. Closing program" << std::endl;
