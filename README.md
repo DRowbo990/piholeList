@@ -1,8 +1,19 @@
 # piholeList
 
-This project is developed because I had a mountian of block lists for pihole. These lists
-would sometimes stop being managed, or removed all together. This list compiles all the domains
-I use into one place so it can be maintained for all to use. 
+###### By: Permit 24 Productions 
+ Description: This project is developed because I had a mountian 
+ of block lists for pihole. These lists would sometimes stop being 
+ managed, or removed all together. This list compiles all the 
+ domains I use into one place so it can be maintained for all 
+ to use. This hosts file is a merged collection of hosts 
+ from reputable sources, with a dash of crowd sourcing. Each used 
+ list has the origional source link to it included as near as I 
+ could find.
+ Domain count: 2374401.
+ Date: 24-Aug-22 Rev: 1.1.1
+ -updated list.txt
+ -updated README.md
+#***************************************************************** 
 
 # Credit
 Links to the origional sources for many domains.
