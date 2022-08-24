@@ -1,4 +1,4 @@
-# piholeList By Permit 24 Productions 
+# piholeList <br /> <sub> <sub> By Permit 24 Productions 
 
 This project is developed because I had a mountian
 of block lists for pihole. These lists would sometimes stop being 
