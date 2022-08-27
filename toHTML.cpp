@@ -1,6 +1,7 @@
 /*******************************************************************************
 Function: takes a .txt file and puts it into html format. Only for pihole block
 	lists
+By: Permit 24 Productions.
 
 Input: command line arguments
 Outputs: file
