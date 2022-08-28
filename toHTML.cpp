@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
 		++counter;
 		getline(readFile, name);
 		output << name << " ";
-		output << "<br>";
+		output << "\n";
 
 		if (counter % 10000 == 0)
 		{
