@@ -23,6 +23,8 @@ discordmerch.com
 discordpartygames.com
 discordsays.com
 discordstatus.com
+gateway.discord.gg
+status.discord.com
 reddit.com
 redditmail.com
 redditmedia.com
