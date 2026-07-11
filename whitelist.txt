@@ -25,3 +25,4 @@ discordsays.com
 discordstatus.com
 gateway.discord.gg
 status.discord.com
+discord-attachments-uploads-prd.storage.googleapis.com
