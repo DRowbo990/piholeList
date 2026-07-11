@@ -26,3 +26,5 @@ discordstatus.com
 gateway.discord.gg
 status.discord.com
 discord-attachments-uploads-prd.storage.googleapis.com
+_2096._https.c-ord12-0c23c7bd.discord.media
+c-ord12-0c23c7bd.discord.media
